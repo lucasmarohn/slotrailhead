@@ -1,0 +1,18 @@
+h2 {
+  font-family: "San Francisco Display", "Segoe UI", "Helvetica Neue Lt Com", arial;
+  font-weight: normal;
+  font-size: calc(1.8rem + 0.3vw);
+  line-height: 3rem;
+}
+
+h4 {
+  font-weight: normal;
+  font-size: calc(1.4rem + 0.15vw);
+  text-transform: uppercase;
+}
+
+.sixteen-nine {
+  display: block;
+  padding-top: 56.25%;
+  position: relative;
+}

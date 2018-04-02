@@ -1,0 +1,80 @@
+@import "_vars.scss";
+.btn {
+  font-family: $font-stack;
+  font-size: 1.8rem;
+  padding: 1rem 2rem;
+  background: transparent;
+  background-size: 100%;
+  border: 0;
+  border-radius: .5rem;
+  text-decoration: none;
+  outline: .2rem;
+  margin-bottom: .2rem;
+  cursor: pointer;
+  transition: box-shadow .1s ease-in-out, background-size .15s ease-in-out;
+  &:hover {
+    background-size: 200%;
+    background-position: top left;
+    transition: box-shadow .1s ease-in-out, background-size .15s ease-in-out;
+  }
+  &-primary {
+    color: white;
+    background: $secondarydark-gu;
+    box-shadow: 0 .2rem .3rem var(--secondaryshadow);
+    &:hover {
+      box-shadow: 0 .1rem .7rem var(--secondaryshadowhover);
+    }
+    &:active, &.pressed {
+      background: $secondarydark-gd;
+    }
+  }
+  &-secondary {
+    color: white;
+    background: $tertiarydark-gu;
+    box-shadow: 0 .2rem .3rem var(--tertiaryshadow);
+    &:hover {
+      box-shadow: 0 .1rem .7rem var(--tertiaryshadowhover);
+    }
+    &:active, &.pressed {
+      background: $tertiarydark-gd;
+    }
+  }
+}
+
+input[type=text], input[type=email] {
+  &:focus {
+    outline-color: var(--secondarydark);
+    outline-offset: -2px;
+  }
+}
+
+.newsletter-signup {
+  .newsletter-form {
+    display: flex;
+  }
+  .user-email {
+    border: 0;
+    border-top-left-radius: .75rem;
+    border-bottom-left-radius: .75rem;
+    padding: 1rem;
+    box-shadow: inset .2rem .2rem .3rem rgba(0,0,0,.3);
+    display: block;
+    flex-grow: 1;
+  }
+  .sign-up {
+    font-family: $font-stack;
+    font-size: 1.8rem;
+    
+    color: #FFFFFF;
+    background: $secondarydark-gu;
+    
+    border: 0;
+    border-top-right-radius: .75rem;
+    border-bottom-right-radius: .75rem;
+
+    padding: 1rem 2rem;
+    display: block;
+    flex-grow: 0;
+  }
+}
+
