@@ -1,3 +1,10 @@
+h1 {
+  font-family: $font-stack;
+  font-weight: normal;
+  font-size: calc(1.8rem + 0.5vw);
+  line-height: 3rem;
+}
+
 h2 {
   font-family: "San Francisco Display", "Segoe UI", "Helvetica Neue Lt Com", arial;
   font-weight: normal;

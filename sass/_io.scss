@@ -41,7 +41,16 @@
   }
 }
 
+button {
+  margin-bottom: 0;
+}
+
 input[type=text], input[type=email] {
+  display: inline-block;
+  border: 0;
+  border-radius: .75rem;
+  padding: 1rem;
+  box-shadow: inset .2rem .2rem .3rem rgba(0,0,0,.3);
   &:focus {
     outline-color: var(--secondarydark);
     outline-offset: -2px;
@@ -53,12 +62,8 @@ input[type=text], input[type=email] {
     display: flex;
   }
   .user-email {
-    border: 0;
-    border-top-left-radius: .75rem;
-    border-bottom-left-radius: .75rem;
-    padding: 1rem;
-    box-shadow: inset .2rem .2rem .3rem rgba(0,0,0,.3);
-    display: block;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
     flex-grow: 1;
   }
   .sign-up {
@@ -75,6 +80,28 @@ input[type=text], input[type=email] {
     padding: 1rem 2rem;
     display: block;
     flex-grow: 0;
+  }
+}
+
+.header-search-form {
+  display:flex;
+
+  .header-search-label {
+    color: white;
+    align-self: flex-start;
+    flex-basis: 100%;
+  }
+  input.search {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    flex-grow: 1;
+  }
+  .search.btn {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding: 1rem 2rem;
+    flex-grow: 0;
+    margin-bottom: 0;
   }
 }
 

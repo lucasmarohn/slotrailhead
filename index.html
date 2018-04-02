@@ -11,22 +11,34 @@
 <body>
   <header class="home bg-fill">
       <nav>
-        <div class="page-links active">
-          <a href="" class="active">Home</a>
-          <a href="">Reviews</a>
-          <a href="">Photo Gallery</a>
-          <a href="">About</a>
-          <a href="">Contact</a>
-        </div>
-        <div class="nav-meta">
-            <div class="logo"></div>
-            <div class="login"><a href="#0">Log in</a> | <a href="#0">Sign Up</a></div>
-            <div class="navToggle"></div>
+        <div class="logo"></div>
+        <div class="nav-meta-small">
+            <div class="login">
+              <a href="#0">Log in</a> | <a href="#0">Sign Up</a>
+            </div>
+            <form class="header-search-form">
+                <label class="header-search-label" for="header-search">Looking for something?</label>
+                <input type="text" id="header-search" class="search"><button class="search btn btn-secondary">Search</button>
+              </form>
+          </div>
+        <input type="checkbox" id="nav-toggle" />
+        <label class="navToggle" for="nav-toggle"><span>Menu</span></label>
+        <div class="nav-links active">
+          <div class="pages">
+            <a href="" class="active">Home</a>
+            <a href="">Reviews</a>
+            <a href="">Photo Gallery</a>
+            <a href="">About</a>
+            <a href="">Contact</a>
+          </div>
+          <div class="nav-meta">
+              <div class="login"><a href="#0">Log in</a> | <a href="#0">Sign Up</a></div>
+          </div>
         </div>
       </nav>
       <div class="hero"><img src="#" alt=""></div>
       <section class="intro content">
-        <h2>Get Out, Stay Out invites kids to run, play, and discover themselves in an outdoor environment.</h2>
+        <h1>Get Out, Stay Out invites kids to run, play, and discover themselves in an outdoor environment.</h1>
         <div class="intro-cta">
           <button class="btn btn-primary">Find an event</button>
           <button class="btn btn-secondary">Make a difference</button>
